@@ -1,3 +1,4 @@
+import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/services/paint/bottom_sheet_custom_painter.dart';
 import 'package:bento_layout_challenger/src/app/core/widgets/app_bottombar_widget.dart';
 import 'package:flutter/material.dart';
@@ -10,14 +11,13 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange,
       floatingActionButton: FloatingActionButton(
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
         onPressed: () {},
-        backgroundColor: const Color.fromARGB(255, 3, 41, 99),
-        child: const Icon(Icons.store, color: Color(0xFF32de84)),
+        backgroundColor: AppColors.bluePrimary,
+        child: const Icon(Icons.store, color: AppColors.greenPrimary),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: CustomPaint(
