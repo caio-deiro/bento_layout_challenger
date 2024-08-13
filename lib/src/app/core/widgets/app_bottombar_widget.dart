@@ -1,3 +1,4 @@
+import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 /// AppBottombarWidget Class responsible for the bottom bar
@@ -8,7 +9,7 @@ class AppBottombarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      color: Colors.white,
+      color: AppColors.whitePrimary,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -17,18 +18,18 @@ class AppBottombarWidget extends StatelessWidget {
               MaterialButton(
                 minWidth: 40,
                 onPressed: () {},
-                child: const Column(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(
+                    const Icon(
                       Icons.home,
-                      color: Color(0xFF32de84),
+                      color: AppColors.greenPrimary,
                     ),
                     Text(
                       'Home',
-                      style: TextStyle(
-                        color: Color(0xFF32de84),
-                      ),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: AppColors.greenPrimary,
+                          ),
                     ),
                   ],
                 ),
@@ -39,15 +40,15 @@ class AppBottombarWidget extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(
+                    const Icon(
                       Icons.local_offer,
-                      color: Colors.green[200],
+                      color: AppColors.greenSecondary,
                     ),
                     Text(
                       'Deals',
-                      style: TextStyle(
-                        color: Colors.green[200],
-                      ),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: AppColors.greenSecondary,
+                          ),
                     ),
                   ],
                 ),
@@ -62,15 +63,15 @@ class AppBottombarWidget extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(
+                    const Icon(
                       Icons.shopping_cart_rounded,
-                      color: Colors.green[200],
+                      color: AppColors.greenSecondary,
                     ),
                     Text(
                       'Cart',
-                      style: TextStyle(
-                        color: Colors.green[200],
-                      ),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: AppColors.greenSecondary,
+                          ),
                     ),
                   ],
                 ),
@@ -81,15 +82,15 @@ class AppBottombarWidget extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Icon(
+                    const Icon(
                       Icons.person,
-                      color: Colors.green[200],
+                      color: AppColors.greenSecondary,
                     ),
                     Text(
                       'Account',
-                      style: TextStyle(
-                        color: Colors.green[200],
-                      ),
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: AppColors.greenSecondary,
+                          ),
                     ),
                   ],
                 ),
