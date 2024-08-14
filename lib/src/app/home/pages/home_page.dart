@@ -1,6 +1,7 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/services/paint/bottom_sheet_custom_painter.dart';
 import 'package:bento_layout_challenger/src/app/core/widgets/app_bottombar_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/widgets/home_green_card_section_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home_header_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -28,6 +29,7 @@ class HomePage extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           const HomeHeaderWidget(),
+          const HomeGreenCardSectionWidget(),
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
