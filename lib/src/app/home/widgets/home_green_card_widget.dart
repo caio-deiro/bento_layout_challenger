@@ -41,16 +41,18 @@ class HomeGreenCardWidget extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          Positioned(
-            left: 15,
-            top: 16,
-            child: Text(
-              '$firstText\n$secondText',
-              style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: AppColors.bluePrimary,
-                    fontWeight: FontWeight.w900,
-                    fontSize: MediaQuery.of(context).size.width * 0.042,
-                  ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 15),
+              child: Text(
+                '$firstText\n$secondText',
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                      color: AppColors.bluePrimary,
+                      fontWeight: FontWeight.w900,
+                      fontSize: MediaQuery.of(context).size.width * 0.042,
+                    ),
+              ),
             ),
           ),
           Positioned(

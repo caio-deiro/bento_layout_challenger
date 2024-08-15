@@ -80,7 +80,7 @@ class _HomeCarouselItemWidgetState extends State<HomeCarouselItemWidget> {
         children: [
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(left: 15, bottom: 10, top: 15),
+              padding: const EdgeInsets.only(left: 15, bottom: 10, top: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

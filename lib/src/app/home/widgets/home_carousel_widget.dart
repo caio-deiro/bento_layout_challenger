@@ -41,7 +41,7 @@ class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
         children: [
           ConstrainedBox(
             constraints: BoxConstraints(
-              maxHeight: MediaQuery.of(context).size.height * 0.21,
+              maxHeight: MediaQuery.of(context).size.height * 0.22,
             ),
             child: CarouselSlider(
               items: const [
@@ -83,6 +83,7 @@ class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
               ),
             ),
           ),
+          const SizedBox(height: 30),
         ],
       ),
     );
