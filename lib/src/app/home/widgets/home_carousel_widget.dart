@@ -60,7 +60,7 @@ class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
               ],
               options: CarouselOptions(
                 viewportFraction: 1,
-                autoPlay: false,
+                autoPlay: true,
                 autoPlayInterval: const Duration(seconds: 3),
                 enlargeCenterPage: true,
                 onPageChanged: (index, _) {
@@ -71,6 +71,7 @@ class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
               ),
             ),
           ),
+          const SizedBox(height: 5),
           DotsIndicator(
             dotsCount: 4,
             position: _currentCarouselIndex,

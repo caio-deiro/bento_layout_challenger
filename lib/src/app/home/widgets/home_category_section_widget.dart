@@ -45,6 +45,7 @@ class HomeCategorySectionWidget extends StatelessWidget {
               },
             ),
           ),
+          const SizedBox(height: 20),
         ],
       ),
     );

@@ -6,6 +6,7 @@ import 'package:bento_layout_challenger/src/app/home/widgets/home_carousel_widge
 import 'package:bento_layout_challenger/src/app/home/widgets/home_category_section_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home_green_card_section_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home_header_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/widgets/home_today_special_section_widget.dart';
 import 'package:flutter/material.dart';
 
 /// HomePage Class
@@ -23,7 +24,9 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    homeController.getCategories();
+    homeController
+      ..getCategories()
+      ..getTodaySpecialItems();
   }
 
   @override
@@ -42,16 +45,9 @@ class _HomePageState extends State<HomePage> {
             HomeCategorySectionWidget(
               categoryItems: homeController.homeCategoryList,
             ),
-            // SliverList(
-            //   delegate: SliverChildBuilderDelegate(
-            //     (BuildContext context, int index) {
-            //       return ListTile(
-            //         title: Text('Item $index'),
-            //       );
-            //     },
-            //     childCount: 100,
-            //   ),
-            // ),
+            HomeTodaySpecialSectionWidget(
+              todaySpecialItems: homeController.todaySpecialItems,
+            ),
           ],
         ),
       ),
