@@ -17,6 +17,9 @@ class AppColors {
   /// Green Quartiary color
   static const greenQuartiary = Color(0xFFE5FAF2);
 
+  /// Green Quintiary color
+  static const greenQuintiary = Color(0xFFE6FDDD);
+
   /// Blue primary color
   static const bluePrimary = Color(0xFF032963);
 
@@ -30,11 +33,14 @@ class AppColors {
   static const yellowPrimary = Color(0xFFECCC00);
 
   /// Red primary color
-  static const redPrimary = Color(0xFFF94449);
+  static const redPrimary = Color(0xFFFFBABA);
 
   /// Orange primary color
-  static const orangePrimary = Color(0xFFF1B04C);
+  static const orangePrimary = Color(0xFFFDF3DD);
 
   /// Grey primary color
   static const greyPrimary = Color(0xFFF6F6F6);
+
+  /// Purple primary color
+  static const purplePrimary = Color(0xFFEABFFF);
 }

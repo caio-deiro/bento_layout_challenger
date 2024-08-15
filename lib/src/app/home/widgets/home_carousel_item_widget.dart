@@ -46,7 +46,7 @@ class _HomeCarouselItemWidgetState extends State<HomeCarouselItemWidget> {
         description2 = 'NOW 10% LESS';
         imagePath = 'assets/images/carousel_apple_image.png';
         cardBackgroundColor = AppColors.redPrimary;
-        titleColor = AppColors.whitePrimary;
+        titleColor = AppColors.bluePrimary;
         descriptionColor = AppColors.whitePrimary;
 
       case HomeCarouselItemType.banana:
@@ -65,7 +65,7 @@ class _HomeCarouselItemWidgetState extends State<HomeCarouselItemWidget> {
         description2 = 'AT 10% DISCOUNT';
         imagePath = 'assets/images/carousel_orange_image.png';
         cardBackgroundColor = AppColors.orangePrimary;
-        titleColor = AppColors.whitePrimary;
+        titleColor = AppColors.greenPrimary;
     }
   }
 
