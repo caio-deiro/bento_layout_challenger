@@ -10,23 +10,25 @@ class HomeGreenCardSectionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SliverToBoxAdapter(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          HomeGreenCardWidget(
-            firstText: 'ORDER',
-            secondText: 'AGAIN',
-            imagePath: 'assets/images/order_again_image.png',
-            imageRightPosition: 5,
-          ),
-          SizedBox(width: 30),
-          HomeGreenCardWidget(
-            firstText: 'LOCAL',
-            secondText: 'SHOP',
-            imagePath: 'assets/images/local_shop_image.png',
-            imageRightPosition: -4,
-          ),
-        ],
+      child: Padding(
+        padding: EdgeInsets.only(bottom: 15),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            HomeGreenCardWidget(
+              firstText: 'ORDER',
+              secondText: 'AGAIN',
+              imagePath: 'assets/images/order_again_image.png',
+              imageRightPosition: 5,
+            ),
+            HomeGreenCardWidget(
+              firstText: 'LOCAL',
+              secondText: 'SHOP',
+              imagePath: 'assets/images/local_shop_image.png',
+              imageRightPosition: -4,
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/services/paint/bottom_sheet_custom_painter.dart';
-import 'package:bento_layout_challenger/src/app/core/widgets/app_bottombar_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/widgets/app_bottombar_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/widgets/home_carousel_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home_green_card_section_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home_header_widget.dart';
 import 'package:flutter/material.dart';
@@ -26,21 +27,27 @@ class HomePage extends StatelessWidget {
         painter: BottomSheetCustomPainterService(),
         child: const AppBottombarWidget(),
       ),
-      body: CustomScrollView(
-        slivers: <Widget>[
-          const HomeHeaderWidget(),
-          const HomeGreenCardSectionWidget(),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index) {
-                return ListTile(
-                  title: Text('Item $index'),
-                );
-              },
-              childCount: 100,
+      body: Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * 0.04,
+        ),
+        child: CustomScrollView(
+          slivers: <Widget>[
+            const HomeHeaderWidget(),
+            const HomeGreenCardSectionWidget(),
+            const HomeCarouselWidget(),
+            SliverList(
+              delegate: SliverChildBuilderDelegate(
+                (BuildContext context, int index) {
+                  return ListTile(
+                    title: Text('Item $index'),
+                  );
+                },
+                childCount: 100,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

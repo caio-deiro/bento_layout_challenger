@@ -33,8 +33,8 @@ class HomeGreenCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
-      width: 170,
+      height: MediaQuery.of(context).size.height * 0.10,
+      width: MediaQuery.of(context).size.width * 0.44,
       decoration: BoxDecoration(
         color: AppColors.greenPrimary,
         borderRadius: BorderRadius.circular(12),
@@ -43,13 +43,13 @@ class HomeGreenCardWidget extends StatelessWidget {
         children: [
           Positioned(
             left: 15,
-            top: 15,
+            top: 16,
             child: Text(
               '$firstText\n$secondText',
               style: Theme.of(context).textTheme.labelLarge?.copyWith(
                     color: AppColors.bluePrimary,
                     fontWeight: FontWeight.w900,
-                    fontSize: 16,
+                    fontSize: MediaQuery.of(context).size.width * 0.042,
                   ),
             ),
           ),
