@@ -34,8 +34,14 @@ class BottomSheetCustomPainterService extends CustomPainter {
         0,
       )
       ..close();
-
-    canvas.drawPath(path, paint);
+    canvas
+      ..drawShadow(
+        path.shift(const Offset(0, -5)),
+        Colors.black.withOpacity(0.4),
+        2,
+        true,
+      )
+      ..drawPath(path, paint);
   }
 
   @override

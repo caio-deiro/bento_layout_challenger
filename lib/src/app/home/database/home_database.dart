@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/models/category_item_model.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
