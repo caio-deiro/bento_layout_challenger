@@ -1,12 +1,12 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/services/paint/bottom_sheet_custom_painter.dart';
+import 'package:bento_layout_challenger/src/app/home/compounds/home/app_bottombar_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/compounds/home/home_carousel_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/compounds/home/home_category_section_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/compounds/home/home_green_card_section_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/compounds/home/home_header_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/compounds/home/home_today_special_section_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/controller/home_controller.dart';
-import 'package:bento_layout_challenger/src/app/home/widgets/app_bottombar_widget.dart';
-import 'package:bento_layout_challenger/src/app/home/widgets/home_carousel_widget.dart';
-import 'package:bento_layout_challenger/src/app/home/widgets/home_category_section_widget.dart';
-import 'package:bento_layout_challenger/src/app/home/widgets/home_green_card_section_widget.dart';
-import 'package:bento_layout_challenger/src/app/home/widgets/home_header_widget.dart';
-import 'package:bento_layout_challenger/src/app/home/widgets/home_today_special_section_widget.dart';
 import 'package:flutter/material.dart';
 
 /// HomePage Class

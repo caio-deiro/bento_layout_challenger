@@ -5,7 +5,7 @@ class TodaySpecialItemModel {
   /// The constructor of the class
   TodaySpecialItemModel({
     required this.name,
-    required this.image,
+    required this.images,
     required this.price,
     required this.priceWithoutDiscount,
     required this.rating,
@@ -18,7 +18,7 @@ class TodaySpecialItemModel {
   final String name;
 
   /// The image path to be displayed on the card
-  final String image;
+  final List<String> images;
 
   /// The price of the item
   final String price;
