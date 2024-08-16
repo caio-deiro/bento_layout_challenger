@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
             ),
             HomeTodaySpecialSectionWidget(
               todaySpecialItems: homeController.todaySpecialItems,
+              routeAnimationService: homeController.routeAnimationService,
             ),
           ],
         ),

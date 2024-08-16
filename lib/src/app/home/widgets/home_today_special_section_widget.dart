@@ -1,5 +1,7 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
+import 'package:bento_layout_challenger/src/app/core/services/routes/route_animation_service.dart';
+import 'package:bento_layout_challenger/src/app/home/pages/details_item_page.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home_today_special_item_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -9,8 +11,12 @@ class HomeTodaySpecialSectionWidget extends StatelessWidget {
   /// Constructor for HomeTodaySpecialSectionWidget
   const HomeTodaySpecialSectionWidget({
     required this.todaySpecialItems,
+    required this.routeAnimationService,
     super.key,
   });
+
+  /// Responsible for creating a custom route for the details item page
+  final RouteAnimationService routeAnimationService;
 
   /// List of today special items to be displayed
   final List<TodaySpecialItemModel> todaySpecialItems;
@@ -52,11 +58,20 @@ class HomeTodaySpecialSectionWidget extends StatelessWidget {
             ),
             itemBuilder: (context, index) {
               final item = todaySpecialItems[index];
-              return HomeTodaySpecialItemWidget(
-                backgroundColor: item.backgroundColor,
-                imagePath: item.image,
-                itemName: item.name,
-                itemRate: item.rating,
+              return GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    routeAnimationService.createRoute(
+                      page: DetailsItemPage(item: item),
+                    ),
+                  );
+                },
+                child: HomeTodaySpecialItemWidget(
+                  backgroundColor: item.backgroundColor,
+                  imagePath: item.image,
+                  itemName: item.name,
+                  itemRate: item.rating,
+                ),
               );
             },
           ),
