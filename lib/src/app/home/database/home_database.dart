@@ -3,7 +3,7 @@ import 'package:bento_layout_challenger/src/app/core/models/category_item_model.
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
 
 /// Class responsable for retrieve the categories
-class HomeDatabase {
+final class HomeDatabase {
   /// Method responsable for retrieve the categories
   List<CategoryItemModel> getCategories() {
     return [
