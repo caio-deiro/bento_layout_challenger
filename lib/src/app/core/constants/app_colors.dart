@@ -30,7 +30,7 @@ class AppColors {
   static const blueSecondary = Color(0xFF828E9B);
 
   /// Yellow primary color
-  static const yellowPrimary = Color(0xFFECCC00);
+  static const yellowPrimary = Color(0xFFFFD101);
 
   /// Red primary color
   static const redPrimary = Color(0xFFB00223);

@@ -3,7 +3,7 @@ import 'package:bento_layout_challenger/src/app/core/models/today_special_item_m
 import 'package:bento_layout_challenger/src/app/home/database/home_database.dart';
 
 /// Controller responsable data management of home page
-class HomeController {
+final class HomeController {
   /// Instance of HomeDatabase
   final homeDatabase = HomeDatabase();
 
