@@ -46,7 +46,11 @@ final class HomeDatabase {
     return [
       TodaySpecialItemModel(
         name: 'Organic Orange',
-        image: 'assets/images/orange_image.png',
+        images: [
+          'assets/images/orange_image.png',
+          'assets/images/orange_image_2.png',
+          'assets/images/orange_image_3.png',
+        ],
         price: '2.99',
         priceWithoutDiscount: '3.99',
         rating: '4.5',
@@ -61,7 +65,11 @@ final class HomeDatabase {
       ),
       TodaySpecialItemModel(
         name: 'Organic Cabbage',
-        image: 'assets/images/cabbage_image.png',
+        images: [
+          'assets/images/cabbage_image.png',
+          'assets/images/cabbage_image_2.png',
+          'assets/images/cabbage_image_3.png',
+        ],
         price: '2.99',
         priceWithoutDiscount: '3.99',
         rating: '4.5',
@@ -75,7 +83,11 @@ final class HomeDatabase {
       ),
       TodaySpecialItemModel(
         name: 'Organic Purple Onion',
-        image: 'assets/images/onion_image.png',
+        images: [
+          'assets/images/onion_image.png',
+          'assets/images/onion_image_2.png',
+          'assets/images/onion_image_3.png',
+        ],
         price: '1.99',
         priceWithoutDiscount: '2.99',
         rating: '4.4',
@@ -93,7 +105,11 @@ final class HomeDatabase {
       ),
       TodaySpecialItemModel(
         name: 'Organic Strawberry',
-        image: 'assets/images/strawberry_image.png',
+        images: [
+          'assets/images/strawberry_image.png',
+          'assets/images/strawberry_image_2.png',
+          'assets/images/strawberry_image_3.png',
+        ],
         price: '3.99',
         priceWithoutDiscount: '4.99',
         rating: '4.5',

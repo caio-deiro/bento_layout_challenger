@@ -7,17 +7,21 @@ import 'package:flutter/material.dart';
 class DotIndicatorWidget extends StatelessWidget {
   /// DotIndicatorWidget Constructor
   const DotIndicatorWidget({
-    this.currentCarouselIndex = 0,
+    required this.currentCarouselIndex,
+    this.dotsCount = 4,
     super.key,
   });
 
   /// Current Carousel Index
   final int currentCarouselIndex;
 
+  /// Dots Count for the Dot Indicator
+  final int dotsCount;
+
   @override
   Widget build(BuildContext context) {
     return DotsIndicator(
-      dotsCount: 4,
+      dotsCount: dotsCount,
       position: currentCarouselIndex,
       decorator: DotsDecorator(
         color: AppColors.greenSextiary,
