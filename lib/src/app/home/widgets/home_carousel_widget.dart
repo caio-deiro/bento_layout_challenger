@@ -1,7 +1,6 @@
-import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
+import 'package:bento_layout_challenger/src/app/home/widgets/dot_indicator_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home_carousel_item_widget.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 /// HomeCarouselItemType Enum that defines the Carousel Styles
@@ -72,18 +71,7 @@ class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
             ),
           ),
           const SizedBox(height: 5),
-          DotsIndicator(
-            dotsCount: 4,
-            position: _currentCarouselIndex,
-            decorator: DotsDecorator(
-              color: AppColors.blueSecondary,
-              activeColor: AppColors.greenPrimary,
-              activeSize: const Size(35, 9),
-              activeShape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(5),
-              ),
-            ),
-          ),
+          DotIndicatorWidget(currentCarouselIndex: _currentCarouselIndex),
           const SizedBox(height: 30),
         ],
       ),

@@ -52,12 +52,15 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        onPressed: () {},
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(50)),
         ),
-        onPressed: () {},
         backgroundColor: AppColors.bluePrimary,
-        child: const Icon(Icons.store, color: AppColors.greenPrimary),
+        child: const Icon(
+          Icons.store,
+          color: AppColors.greenPrimary,
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: CustomPaint(

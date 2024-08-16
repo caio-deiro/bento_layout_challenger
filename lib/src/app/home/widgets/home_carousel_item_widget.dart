@@ -48,6 +48,8 @@ class _HomeCarouselItemWidgetState extends State<HomeCarouselItemWidget> {
         cardBackgroundColor = AppColors.redPrimary;
         titleColor = AppColors.bluePrimary;
         descriptionColor = AppColors.whitePrimary;
+        imageHeight = 0.3;
+        imageWidth = 0.55;
 
       case HomeCarouselItemType.banana:
         title = 'Top Deal !';

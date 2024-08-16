@@ -1,4 +1,5 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
+import 'package:bento_layout_challenger/src/app/home/widgets/app_bottombar_item_widget.dart';
 import 'package:flutter/material.dart';
 
 /// AppBottombarWidget Class responsible for the bottom bar
@@ -13,89 +14,39 @@ class AppBottombarWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              MaterialButton(
-                minWidth: 40,
-                onPressed: () {},
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    const Icon(
-                      Icons.home,
-                      color: AppColors.greenPrimary,
-                    ),
-                    Text(
-                      'Home',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.greenPrimary,
-                          ),
-                    ),
-                  ],
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.39,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                AppBottombarItemWidget(
+                  itemTitle: 'Home',
+                  itemIcon: Icons.home,
+                  itemColor: AppColors.greenPrimary,
+                  titleColor: AppColors.greenPrimary,
                 ),
-              ),
-              MaterialButton(
-                minWidth: 40,
-                onPressed: () {},
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    const Icon(
-                      Icons.local_offer,
-                      color: AppColors.greenSecondary,
-                    ),
-                    Text(
-                      'Deals',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.greenSecondary,
-                          ),
-                    ),
-                  ],
+                AppBottombarItemWidget(
+                  itemTitle: 'Deals',
+                  itemIcon: Icons.local_offer,
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-          Row(
-            children: [
-              MaterialButton(
-                minWidth: 40,
-                onPressed: () {},
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    const Icon(
-                      Icons.shopping_cart_rounded,
-                      color: AppColors.greenSecondary,
-                    ),
-                    Text(
-                      'Cart',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.greenSecondary,
-                          ),
-                    ),
-                  ],
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.37,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                AppBottombarItemWidget(
+                  itemTitle: 'Cart',
+                  itemIcon: Icons.shopping_cart_rounded,
                 ),
-              ),
-              MaterialButton(
-                minWidth: 40,
-                onPressed: () {},
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    const Icon(
-                      Icons.person,
-                      color: AppColors.greenSecondary,
-                    ),
-                    Text(
-                      'Account',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.greenSecondary,
-                          ),
-                    ),
-                  ],
+                AppBottombarItemWidget(
+                  itemTitle: 'Account',
+                  itemIcon: Icons.person,
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),

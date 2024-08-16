@@ -20,20 +20,20 @@ class AppColors {
   /// Green Quintiary color
   static const greenQuintiary = Color(0xFFE6FDDD);
 
+  /// Green Sextiary color
+  static const greenSextiary = Color(0xFFC6DBD0);
+
   /// Blue primary color
   static const bluePrimary = Color(0xFF032963);
 
   /// Blue secondary color
   static const blueSecondary = Color(0xFF828E9B);
 
-  /// Blue tertiary color
-  static const blueTertiary = Color(0xFFBFEDC8);
-
   /// Yellow primary color
   static const yellowPrimary = Color(0xFFECCC00);
 
   /// Red primary color
-  static const redPrimary = Color(0xFFFFBABA);
+  static const redPrimary = Color(0xFFB00223);
 
   /// Orange primary color
   static const orangePrimary = Color(0xFFFDF3DD);
