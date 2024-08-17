@@ -34,9 +34,9 @@ class CarouselWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         ConstrainedBox(
-          constraints: BoxConstraints(
+          constraints: const BoxConstraints(
             // ignore: lines_longer_than_80_chars
-            maxHeight: MediaQuery.of(context).size.height * carouselHeight,
+            maxHeight: 150,
           ),
           child: CarouselSlider(
             items: carouselItems,

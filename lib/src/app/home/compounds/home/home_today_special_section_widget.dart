@@ -1,6 +1,6 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
-import 'package:bento_layout_challenger/src/app/core/services/routes/route_animation_service.dart';
+import 'package:bento_layout_challenger/src/app/core/services/routes/details_route_animation_service.dart';
 import 'package:bento_layout_challenger/src/app/home/pages/details_item_page.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home/home_today_special_item_widget.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +61,7 @@ class HomeTodaySpecialSectionWidget extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
-                    routeAnimationService.createRoute(
+                    routeAnimationService.createDetailsRouteAnimation(
                       page: DetailsItemPage(item: item),
                     ),
                   );

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 /// A class that provides custom route animations
-class RouteAnimationService {
-  /// Creates a custom route for the details item page
-  Route<dynamic> createRoute({
-    // required BuildContext context,
+class SplashRouteAnimationService {
+  /// Creates a custom route for the splash page
+  Route<dynamic> createSplashRouteAnimation({
     required Widget page,
   }) {
     return PageRouteBuilder(
+      transitionDuration: const Duration(milliseconds: 1200),
       pageBuilder: (_, ___, __) => page,
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
-        const begin = Offset(1, 0);
+        const begin = Offset(0, 1);
         const end = Offset.zero;
-        const curve = Curves.easeIn;
+        const curve = Curves.easeInOut;
         final tween = Tween(begin: begin, end: end).chain(
           CurveTween(curve: curve),
         );

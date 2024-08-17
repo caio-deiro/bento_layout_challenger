@@ -1,6 +1,6 @@
 import 'package:bento_layout_challenger/src/app/core/models/category_item_model.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
-import 'package:bento_layout_challenger/src/app/core/services/routes/route_animation_service.dart';
+import 'package:bento_layout_challenger/src/app/core/services/routes/details_route_animation_service.dart';
 import 'package:bento_layout_challenger/src/app/home/database/home_database.dart';
 
 /// Controller responsable data management of home page

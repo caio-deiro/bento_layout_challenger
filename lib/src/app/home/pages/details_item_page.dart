@@ -1,4 +1,3 @@
-import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
 import 'package:bento_layout_challenger/src/app/home/compounds/details_page/details_body_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/compounds/details_page/details_carousel_widget.dart';
@@ -21,7 +20,6 @@ class DetailsItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.whitePrimary,
       body: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: MediaQuery.of(context).size.width * 0.04,
