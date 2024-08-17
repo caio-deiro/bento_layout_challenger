@@ -26,17 +26,24 @@ class _DetailsCarouselWidgetState extends State<DetailsCarouselWidget> {
       child: Column(
         children: [
           CarouselWidget(
+            maxHeight: 300,
+            minHeight: 300,
             onPageChanged: (index, __) {
               setState(() {
                 _carouselIndex = index;
               });
             },
-            carouselItems: widget.itemImages.map(Image.asset).toList(),
+            carouselItems: widget.itemImages
+                .map(
+                  (image) => Image.asset(
+                    image,
+                    width: double.infinity,
+                  ),
+                )
+                .toList(),
             autoPlayCarousel: false,
-            carouselHeight: 0.4,
             dotsCount: 3,
           ),
-          const SizedBox(height: 5),
           DotIndicatorWidget(
             currentCarouselIndex: _carouselIndex,
             dotsCount: widget.itemImages.length,

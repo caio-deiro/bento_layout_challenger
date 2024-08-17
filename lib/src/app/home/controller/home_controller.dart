@@ -1,4 +1,5 @@
 import 'package:bento_layout_challenger/src/app/core/models/category_item_model.dart';
+import 'package:bento_layout_challenger/src/app/core/models/home_carousel_item_model.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
 import 'package:bento_layout_challenger/src/app/core/services/routes/details_route_animation_service.dart';
 import 'package:bento_layout_challenger/src/app/home/database/home_database.dart';
@@ -17,6 +18,9 @@ final class HomeController {
   /// List of today special items to be displayed
   List<TodaySpecialItemModel> todaySpecialItems = [];
 
+  /// List of home carousel items to be displayed
+  List<HomeCarouselItemModel> homeCarouselList = [];
+
   /// Method responsable for get the categories
   void getCategories() {
     homeCategoryList = homeDatabase.getCategories();
@@ -25,5 +29,10 @@ final class HomeController {
   /// Method responsable for get the today special items
   void getTodaySpecialItems() {
     todaySpecialItems = homeDatabase.getTodaySpecialItems();
+  }
+
+  /// Method responsable for get the home carousel items
+  void getHomeCarouselItems() {
+    homeCarouselList = homeDatabase.getCarouselItems();
   }
 }

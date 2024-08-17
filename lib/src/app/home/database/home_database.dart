@@ -1,9 +1,52 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/models/category_item_model.dart';
+import 'package:bento_layout_challenger/src/app/core/models/home_carousel_item_model.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
 
 /// Class responsable for retrieve the categories
 final class HomeDatabase {
+  /// Method responsable for retrieve the home carousel items
+  List<HomeCarouselItemModel> getCarouselItems() {
+    return [
+      HomeCarouselItemModel(
+        title: 'Top Deal !',
+        description: 'FRESH AVOCADO UP TO 15% OFF',
+        imagePath: 'assets/images/carousel_avocado_image.png',
+        cardBackgroundColor: AppColors.greenTertiary,
+        descriptionColor: AppColors.bluePrimary,
+        titleColor: AppColors.blueSecondary,
+        type: HomeCarouselItemType.avocado,
+      ),
+      HomeCarouselItemModel(
+        title: 'Top Deal !',
+        description: 'FRESH APPLE NOW 10% LESS',
+        imagePath: 'assets/images/carousel_apple_image.png',
+        cardBackgroundColor: AppColors.redPrimary,
+        titleColor: AppColors.bluePrimary,
+        descriptionColor: AppColors.whitePrimary,
+        type: HomeCarouselItemType.apple,
+      ),
+      HomeCarouselItemModel(
+        title: 'Top Deal !',
+        description: 'FRESH BANANA SAVE 15% TODAY',
+        imagePath: 'assets/images/carousel_banana_image.png',
+        cardBackgroundColor: AppColors.yellowPrimary,
+        titleColor: AppColors.whitePrimary,
+        descriptionColor: AppColors.whitePrimary,
+        type: HomeCarouselItemType.banana,
+      ),
+      HomeCarouselItemModel(
+        title: 'Top Deal !',
+        description: 'FRESH ORANGE GET 20% OFF',
+        imagePath: 'assets/images/carousel_orange_image.png',
+        cardBackgroundColor: AppColors.orangePrimary,
+        titleColor: AppColors.greenPrimary,
+        descriptionColor: AppColors.bluePrimary,
+        type: HomeCarouselItemType.orange,
+      ),
+    ];
+  }
+
   /// Method responsable for retrieve the categories
   List<CategoryItemModel> getCategories() {
     return [
