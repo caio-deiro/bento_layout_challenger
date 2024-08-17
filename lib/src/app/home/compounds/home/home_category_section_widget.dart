@@ -24,7 +24,7 @@ class HomeCategorySectionWidget extends StatelessWidget {
             'Shop by category',
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: AppColors.bluePrimary,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w800,
                 ),
           ),
           const SizedBox(height: 10),

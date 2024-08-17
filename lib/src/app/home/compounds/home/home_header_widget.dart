@@ -19,7 +19,7 @@ class HomeHeaderWidget extends StatelessWidget {
               Text(
                 'Delivery',
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.bold,
                       color: AppColors.bluePrimary,
                       fontSize: 18,
                     ),
@@ -29,7 +29,7 @@ class HomeHeaderWidget extends StatelessWidget {
                   Text(
                     'Salvador, Bahia',
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.bold,
                           color: AppColors.blueSecondary,
                         ),
                   ),

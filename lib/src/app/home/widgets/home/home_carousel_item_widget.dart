@@ -90,7 +90,8 @@ class _HomeCarouselItemWidgetState extends State<HomeCarouselItemWidget> {
                     title,
                     style: Theme.of(context).textTheme.labelLarge?.copyWith(
                           color: titleColor,
-                          fontSize: MediaQuery.of(context).size.width * 0.035,
+                          fontSize: MediaQuery.of(context).size.width * 0.033,
+                          fontWeight: FontWeight.bold,
                         ),
                   ),
                   Text(
@@ -98,7 +99,7 @@ class _HomeCarouselItemWidgetState extends State<HomeCarouselItemWidget> {
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: descriptionColor,
                           fontWeight: FontWeight.w900,
-                          fontSize: MediaQuery.of(context).size.width * 0.045,
+                          fontSize: MediaQuery.of(context).size.width * 0.044,
                         ),
                   ),
                   const SizedBox(height: 10),

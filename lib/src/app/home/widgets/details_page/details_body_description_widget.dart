@@ -20,7 +20,7 @@ class DetailsBodyDescriptionWidget extends StatelessWidget {
           'Details',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 color: AppColors.bluePrimary,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w800,
               ),
         ),
         const SizedBox(height: 10),
@@ -29,7 +29,7 @@ class DetailsBodyDescriptionWidget extends StatelessWidget {
           textAlign: TextAlign.start,
           style: Theme.of(context).textTheme.labelLarge?.copyWith(
                 color: AppColors.blueQuartiary,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w700,
               ),
         ),
         const SizedBox(height: 30),
