@@ -11,24 +11,26 @@ class DetailsHeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBarWidget(
+      appBarHeight: 60,
       leadingWidth: 40,
-      leading: CircleAvatar(
-        backgroundColor: AppColors.greyPrimary,
-        child: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_outlined),
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-        ),
-      ),
-      actions: [
-        CircleAvatar(
+      leading: Align(
+        alignment: Alignment.bottomLeft,
+        child: CircleAvatar(
           backgroundColor: AppColors.greyPrimary,
           child: IconButton(
-            icon: const Icon(Icons.favorite_border),
+            icon: const Icon(Icons.arrow_back_ios_new_outlined),
             onPressed: () {
               Navigator.of(context).pop();
             },
+          ),
+        ),
+      ),
+      actions: const [
+        Align(
+          alignment: Alignment.bottomRight,
+          child: CircleAvatar(
+            backgroundColor: AppColors.greyPrimary,
+            child: Icon(Icons.favorite_border),
           ),
         ),
       ],
