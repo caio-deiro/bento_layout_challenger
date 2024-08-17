@@ -38,7 +38,6 @@ class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
       child: Column(
         children: [
           CarouselWidget(
-            autoPlayCarousel: false,
             onPageChanged: (index, __) {
               setState(() {
                 _carouselIndex = index;
