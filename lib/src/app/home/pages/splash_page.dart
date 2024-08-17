@@ -12,6 +12,7 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
+  /// SplashRouteAnimationService instance
   final splashRouteService = SplashRouteAnimationService();
   @override
   void initState() {

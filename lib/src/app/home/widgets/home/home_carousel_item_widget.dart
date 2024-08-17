@@ -23,9 +23,10 @@ class HomeCarouselItemWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.only(left: 15, bottom: 10, top: 10),
+          Padding(
+            padding: const EdgeInsets.only(left: 15, bottom: 10, top: 10),
+            child: SizedBox(
+              width: 200,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -69,9 +70,10 @@ class HomeCarouselItemWidget extends StatelessWidget {
           ),
           Flexible(
             child: Image.asset(
+              alignment: Alignment.centerRight,
               carouselItem.imagePath,
-              height: 180,
-              width: 180,
+              height: carouselItem.imageHeight,
+              width: carouselItem.imageWidth,
             ),
           ),
         ],

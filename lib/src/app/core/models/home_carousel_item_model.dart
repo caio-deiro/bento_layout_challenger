@@ -24,6 +24,8 @@ class HomeCarouselItemModel {
     required this.descriptionColor,
     required this.titleColor,
     required this.type,
+    required this.imageHeight,
+    required this.imageWidth,
   });
 
   final HomeCarouselItemType type;
@@ -45,4 +47,10 @@ class HomeCarouselItemModel {
 
   /// HomeCarouselItemModel titleColor
   final Color titleColor;
+
+  /// HomeCarouselItemModel imageHeight
+  final double imageHeight;
+
+  /// HomeCarouselItemModel imageWidth
+  final double imageWidth;
 }

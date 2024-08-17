@@ -64,6 +64,7 @@ class DetailsBottomBarWidget extends StatelessWidget {
                             fontSize: 18,
                             // ignore: lines_longer_than_80_chars
                             decorationColor: AppColors.blueSecondary.withOpacity(0.5),
+                            decorationThickness: 1.5,
                           ),
                     ),
                   ],
