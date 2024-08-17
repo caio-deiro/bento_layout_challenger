@@ -39,7 +39,7 @@ class DetailsBodyCardItemWidget extends StatelessWidget {
           itemName,
           style: Theme.of(context).textTheme.labelMedium?.copyWith(
                 color: AppColors.bluePrimary,
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w800,
               ),
         ),
       ],

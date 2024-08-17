@@ -41,6 +41,7 @@ class DetailsBottomBarWidget extends StatelessWidget {
                   'Price',
                   style: Theme.of(context).textTheme.labelLarge?.copyWith(
                         color: AppColors.blueSecondary.withOpacity(0.7),
+                        fontWeight: FontWeight.bold,
                       ),
                 ),
                 Row(
@@ -50,7 +51,7 @@ class DetailsBottomBarWidget extends StatelessWidget {
                       // ignore: lines_longer_than_80_chars
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                             color: AppColors.bluePrimary,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w800,
                           ),
                     ),
                     const SizedBox(width: 10),
@@ -58,7 +59,7 @@ class DetailsBottomBarWidget extends StatelessWidget {
                       '\$$priceWithoutDiscount',
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
                             color: AppColors.blueSecondary,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w600,
                             decoration: TextDecoration.lineThrough,
                             fontSize: 18,
                             // ignore: lines_longer_than_80_chars
@@ -82,7 +83,7 @@ class DetailsBottomBarWidget extends StatelessWidget {
                 'Add to cart',
                 style: Theme.of(context).textTheme.labelLarge?.copyWith(
                       color: AppColors.bluePrimary,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w800,
                     ),
               ),
             ),

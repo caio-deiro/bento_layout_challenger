@@ -32,7 +32,7 @@ class HomeTodaySpecialSectionWidget extends StatelessWidget {
               Text(
                 "Today's Special",
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w800,
                       color: AppColors.bluePrimary,
                     ),
               ),

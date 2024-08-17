@@ -13,6 +13,7 @@ class AppWidget extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         useMaterial3: true,
+        fontFamily: 'NunitoBlack',
       ),
       home: const HomePage(),
     );
