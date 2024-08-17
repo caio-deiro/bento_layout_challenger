@@ -1,7 +1,9 @@
 import 'package:bento_layout_challenger/src/app/core/constants/app_colors.dart';
 import 'package:bento_layout_challenger/src/app/core/models/today_special_item_model.dart';
+import 'package:bento_layout_challenger/src/app/home/compounds/details_page/details_body_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/compounds/details_page/details_carousel_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/compounds/details_page/details_header_widget.dart';
+import 'package:bento_layout_challenger/src/app/home/widgets/details_page/details_bottom_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 /// DetailsItemPage is a StatelessWidget that displays
@@ -28,8 +30,13 @@ class DetailsItemPage extends StatelessWidget {
           slivers: [
             const DetailsHeaderWidget(),
             DetailsCarouselWidget(itemImages: item.images),
+            DetailsBodyWidget(item: item),
           ],
         ),
+      ),
+      bottomNavigationBar: DetailsBottomBarWidget(
+        price: item.price,
+        priceWithoutDiscount: item.priceWithoutDiscount,
       ),
     );
   }

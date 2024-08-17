@@ -54,14 +54,11 @@ final class HomeDatabase {
         price: '2.99',
         priceWithoutDiscount: '3.99',
         rating: '4.5',
-        description: 'Organic Orange',
+        description: 'Organic Fresh Orange',
         backgroundColor: AppColors.orangePrimary,
-        details: '''
-            Oranges, often referred to as the "sunshine fruit," are one of the most 
-            popular citrus varieties. Known for their bright color and refreshing taste, 
-            oranges are prized for their sweet and tangy flavor. The fruit's segments are
-            tightly packed within its peel, which can range from a deep orange to a yellowish hue.
-                  ''',
+        details:
+            // ignore: lines_longer_than_80_chars
+            "Oranges, often referred to as the sunshine fruit, are one of the most popular citrus varieties. Known for their bright color and refreshing taste, oranges are prized for their sweet and tangy flavor. The fruit's segments aretightly packed within its peel, which can range from a deep orange to a yellowish hue.",
       ),
       TodaySpecialItemModel(
         name: 'Organic Cabbage',
@@ -75,11 +72,9 @@ final class HomeDatabase {
         rating: '4.5',
         description: 'Organic Fresh Green Cabbage',
         backgroundColor: AppColors.greenQuintiary,
-        details: '''
-                are commonly know as green cabbage, the cannonball 
-                cabbage is one of the most popular cabbage varieties. It is 
-                so named for the way it's leaves wound tightly ever one.
-              ''',
+        details:
+            // ignore: lines_longer_than_80_chars
+            "are commonly know as green cabbage, the cannonball cabbage is one of the most popular cabbage varieties. It is so named for the way it's leaves wound tightly ever one.",
       ),
       TodaySpecialItemModel(
         name: 'Organic Purple Onion',
@@ -93,15 +88,10 @@ final class HomeDatabase {
         rating: '4.4',
         description: 'Organic Fresh Purple Onion',
         backgroundColor: AppColors.purplePrimary,
-        details: '''
-                Purple onions, also known as red onions, are a vibrant and 
-                flavorful variety of onion that stands out for its striking
-                color and mild, sweet taste. Unlike their white or yellow 
-                counterparts, purple onions have a distinctive reddish-purple 
-                skin and layers of white flesh tinged with shades of purple. 
-                They are popular in salads, salsas, and as a garnish because
-                of their appealing color and crisp texture.
-              ''',
+        // ignore: lines_longer_than_80_chars
+        details:
+            // ignore: lines_longer_than_80_chars
+            'Purple onions, also known as red onions, are a vibrant and flavorful variety of onion that stands out for its striking color and mild, sweet taste. Unlike their white or yellow counterparts, purple onions have a distinctive reddish-purple skin and layers of white flesh tinged with shades of purple. They are popular in salads, salsas, and as a garnish because of their appealing color and crisp texture.',
       ),
       TodaySpecialItemModel(
         name: 'Organic Strawberry',
@@ -115,14 +105,9 @@ final class HomeDatabase {
         rating: '4.5',
         description: 'Organic Fresh Strawberry',
         backgroundColor: AppColors.redPrimary,
-        details: '''
-                Strawberries, often dubbed "nature's candy," are beloved for 
-                their vibrant red color, juicy texture, and sweet-tart flavor. 
-                These small, heart-shaped fruits are not only visually appealing 
-                but also packed with nutrients. Rich in vitamin C, manganese, and 
-                antioxidants, strawberries are a healthy treat that can be enjoyed 
-                fresh, in desserts, or as part of savory dishes.
-              ''',
+        details:
+            // ignore: lines_longer_than_80_chars
+            "Strawberries, often dubbed nature's candy, are beloved for their vibrant red color, juicy texture, and sweet-tart flavor. These small, heart-shaped fruits are not only visually appealing but also packed with nutrients. Rich in vitamin C, manganese, and antioxidants, strawberries are a healthy treat that can be enjoyed fresh, in desserts, or as part of savory dishes.",
       ),
     ];
   }

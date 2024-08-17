@@ -8,6 +8,7 @@ class AppBarWidget extends StatelessWidget {
     required this.leading,
     required this.actions,
     this.leadingWidth = 150,
+    this.appBarHeight = 80,
     super.key,
   });
 
@@ -20,6 +21,9 @@ class AppBarWidget extends StatelessWidget {
   /// The width of the leading widget
   final double leadingWidth;
 
+  /// The height of the appbar
+  final double appBarHeight;
+
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
@@ -27,7 +31,7 @@ class AppBarWidget extends StatelessWidget {
       pinned: true,
       backgroundColor: AppColors.whitePrimary,
       surfaceTintColor: Colors.transparent,
-      toolbarHeight: 80,
+      toolbarHeight: appBarHeight,
       leadingWidth: leadingWidth,
       leading: leading,
       actions: actions,

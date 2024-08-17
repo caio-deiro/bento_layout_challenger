@@ -29,6 +29,12 @@ class AppColors {
   /// Blue secondary color
   static const blueSecondary = Color(0xFF828E9B);
 
+  /// Blue tertiary color
+  static const blueTertiary = Color(0xFFC2F0F3);
+
+  /// Blue Quartiary color
+  static const blueQuartiary = Color(0xFF2B4C6D);
+
   /// Yellow primary color
   static const yellowPrimary = Color(0xFFFFD101);
 
