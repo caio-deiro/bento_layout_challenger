@@ -28,7 +28,6 @@ class HomeTodaySpecialItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.44,
       height: MediaQuery.of(context).size.height * 0.6,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
@@ -43,7 +42,7 @@ class HomeTodaySpecialItemWidget extends StatelessWidget {
                 Center(
                   child: Image.asset(
                     imagePath,
-                    width: 120,
+                    width: 110,
                     height: 120,
                   ),
                 ),

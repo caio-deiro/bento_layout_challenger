@@ -155,7 +155,7 @@ final class HomeDatabase {
         priceWithoutDiscount: '4.99',
         rating: '4.5',
         description: 'Organic Fresh Strawberry',
-        backgroundColor: AppColors.redPrimary,
+        backgroundColor: AppColors.redPrimary.withOpacity(0.2),
         details:
             // ignore: lines_longer_than_80_chars
             "Strawberries, often dubbed nature's candy, are beloved for their vibrant red color, juicy texture, and sweet-tart flavor. These small, heart-shaped fruits are not only visually appealing but also packed with nutrients. Rich in vitamin C, manganese, and antioxidants, strawberries are a healthy treat that can be enjoyed fresh, in desserts, or as part of savory dishes.",
