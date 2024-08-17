@@ -26,7 +26,7 @@ class HomeCarouselItemWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 15, bottom: 10, top: 10),
             child: SizedBox(
-              width: 180,
+              width: 195,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
