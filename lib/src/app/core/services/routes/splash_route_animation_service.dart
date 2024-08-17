@@ -7,7 +7,7 @@ class SplashRouteAnimationService {
     required Widget page,
   }) {
     return PageRouteBuilder(
-      transitionDuration: const Duration(milliseconds: 1200),
+      transitionDuration: const Duration(milliseconds: 1600),
       pageBuilder: (_, ___, __) => page,
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         const begin = Offset(0, 1);
