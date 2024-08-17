@@ -10,6 +10,8 @@ class CarouselWidget extends StatelessWidget {
     this.autoPlayCarousel = true,
     this.carouselHeight = 0.22,
     this.dotsCount = 4,
+    this.maxHeight = 150,
+    this.minHeight = 150,
     super.key,
   });
 
@@ -28,15 +30,23 @@ class CarouselWidget extends StatelessWidget {
   /// The function to be called when the page changes
   final dynamic Function(int, CarouselPageChangedReason)? onPageChanged;
 
+  /// The maximum height of the carousel
+  final double maxHeight;
+
+  /// The minimum height of the carousel
+  final double minHeight;
+
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
       children: [
         ConstrainedBox(
-          constraints: const BoxConstraints(
-            // ignore: lines_longer_than_80_chars
-            maxHeight: 150,
+          constraints: BoxConstraints(
+            maxHeight: maxHeight,
+            minHeight: minHeight,
           ),
           child: CarouselSlider(
             items: carouselItems,

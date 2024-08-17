@@ -1,3 +1,4 @@
+import 'package:bento_layout_challenger/src/app/core/models/home_carousel_item_model.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/carousel_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/dot_indicator_widget.dart';
 import 'package:bento_layout_challenger/src/app/home/widgets/home/home_carousel_item_widget.dart';
@@ -23,7 +24,13 @@ enum HomeCarouselItemType {
 // ignore: must_be_immutable
 class HomeCarouselWidget extends StatefulWidget {
   /// HomeCarouselWidget Constructor
-  const HomeCarouselWidget({super.key});
+  const HomeCarouselWidget({
+    required this.carouselItemList,
+    super.key,
+  });
+
+  /// List of HomeCarouselItemModel to be displayed
+  final List<HomeCarouselItemModel> carouselItemList;
 
   @override
   State<HomeCarouselWidget> createState() => _HomeCarouselWidgetState();
@@ -43,20 +50,11 @@ class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
                 _carouselIndex = index;
               });
             },
-            carouselItems: const [
-              HomeCarouselItemWidget(
-                type: HomeCarouselItemType.avocado,
-              ),
-              HomeCarouselItemWidget(
-                type: HomeCarouselItemType.apple,
-              ),
-              HomeCarouselItemWidget(
-                type: HomeCarouselItemType.banana,
-              ),
-              HomeCarouselItemWidget(
-                type: HomeCarouselItemType.orange,
-              ),
-            ],
+            carouselItems: widget.carouselItemList
+                .map(
+                  (item) => HomeCarouselItemWidget(carouselItem: item),
+                )
+                .toList(),
           ),
           const SizedBox(height: 5),
           DotIndicatorWidget(

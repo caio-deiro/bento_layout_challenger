@@ -26,7 +26,8 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     homeController
       ..getCategories()
-      ..getTodaySpecialItems();
+      ..getTodaySpecialItems()
+      ..getHomeCarouselItems();
   }
 
   @override
@@ -40,7 +41,9 @@ class _HomePageState extends State<HomePage> {
           slivers: <Widget>[
             const HomeHeaderWidget(),
             const HomeGreenCardSectionWidget(),
-            const HomeCarouselWidget(),
+            HomeCarouselWidget(
+              carouselItemList: homeController.homeCarouselList,
+            ),
             HomeCategorySectionWidget(
               categoryItems: homeController.homeCategoryList,
             ),
