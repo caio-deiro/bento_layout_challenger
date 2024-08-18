@@ -18,6 +18,7 @@ class DetailsCarouselWidget extends StatefulWidget {
 }
 
 class _DetailsCarouselWidgetState extends State<DetailsCarouselWidget> {
+  /// Index of the current carousel item
   int _carouselIndex = 0;
 
   @override

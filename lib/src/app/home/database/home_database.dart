@@ -92,7 +92,6 @@ final class HomeDatabase {
   }
 
   /// Method responsable for retrieve the today special items
-
   List<TodaySpecialItemModel> getTodaySpecialItems() {
     return [
       TodaySpecialItemModel(

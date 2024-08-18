@@ -37,6 +37,7 @@ class HomeCarouselWidget extends StatefulWidget {
 }
 
 class _HomeCarouselWidgetState extends State<HomeCarouselWidget> {
+  /// Index of the current carousel item
   int _carouselIndex = 0;
 
   @override
